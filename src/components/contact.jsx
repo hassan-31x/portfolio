@@ -6,7 +6,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto flex flex-col md:flex-row-reverse text-white font-Poppins gap-20">
+    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto flex flex-col-reverse md:flex-row-reverse text-white font-Poppins gap-20">
       <div className="flex-[5]">
         <div className="flex gap-3 mb-[3.5rem]">
           <div className="input-field">
@@ -32,7 +32,7 @@ const Contact = () => {
             </label>
           </div>
         </div>
-        <div className="input-field mb-[2rem] w-[77%]">
+        <div className="input-field mb-[2rem] w-[100%] md:w-[77%]">
             <input
               type="text"
               className="text-white font-Poppins px-3 text-sm w-full"
@@ -43,8 +43,8 @@ const Contact = () => {
               Subject
             </label>
         </div><br />
-        <textarea name="" id="" cols="20" rows="10" className="w-[77%] font-Poppins px-3 text-md py-4 mb-5"></textarea>
-        <div className="w-[77%]">
+        <textarea name="" id="" cols="20" rows="10" className="w-[100%] md:w-[77%] font-Poppins px-3 text-md py-4 mb-5"></textarea>
+        <div className="w-[100%] md:w-[77%]">
           <button className="flex gap-2 items-center bg-white text-darkColor px-3 py-2 rounded-3xl text-sm font-semibold ml-auto border border-white hover:bg-darkColor hover:text-white duration-200">Send Message<IconContext.Provider value={{size: 20}}><MdSend /></IconContext.Provider></button>
         </div>
       </div>

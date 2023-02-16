@@ -150,3 +150,13 @@ li:hover > .underline-div {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.overlay-img {
+	background: url("/src/assets/overlay-img.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.video-css {
+	background: url("/src/assets/Project1.mp4");
+	background-repeat: no-repeat;
+	background-size: contain;
+}

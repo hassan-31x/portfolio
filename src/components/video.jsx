@@ -25,11 +25,11 @@ const Video = ({title, desc, tech, imgName, videoName, keyss}) => {
         <HoverVideoPlayer
           restartOnPaused
           pausedOverlay={
-            <img
-              src={`/src/assets/${imgName}.png`}
-              className='grayscale-[60%]'
+            <div
+              // src={`/src/assets/${imgName}.png`}
+              className='grayscale-[60%] overlay-img'
               ref={el => img=el}
-              alt=""
+              // alt=""
               style={{
                 width: "150%",
                 height: "150%",
@@ -37,7 +37,7 @@ const Video = ({title, desc, tech, imgName, videoName, keyss}) => {
               }}
             />
           }
-          videoSrc={`/src/assets/${videoName}.mp4`} className='mx-auto lg:mx-0 w-[55rem] max-w-[60vw] h-auto mb-10 lg:mb-0'
+          videoSrc={`/src/assets/${videoName}.mp4`} className='mx-auto lg:mx-0 w-[55rem] max-w-[60vw] h-auto mb-10 lg:mb-0 video-css'
         />
         
         <div className={`text-white ${keyss === 1 ? 'right-0' : 'left-0'} absolute z-[100]`}>
