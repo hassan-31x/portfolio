@@ -1,0 +1,96 @@
+.gradient-01 {    
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    left: -30%;
+    top: 50%;
+
+    transform: rotate(-114.2deg);
+    z-index: 9999;
+    background-image: linear-gradient(270deg,
+            hsl(295deg 76% 51%) 0%,
+            hsl(284deg 70% 73%) 26%,
+            hsl(257deg 70% 86%) 39%,
+            hsl(202deg 92% 90%) 50%,
+            hsl(215deg 77% 81%) 61%,
+            hsl(221deg 73% 70%) 74%,
+            hsl(220deg 76% 51%) 100%);
+    filter: blur(180px);
+}
+
+.hero-gradient {
+    background: linear-gradient(97.86deg,
+            #a509ff 0%,
+            #34acc7 53.65%,
+            #a134c7 100%);
+}
+
+.gradient-02 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    /* top: -30%; */
+    right: -10%;
+
+    background: #5cecff;
+    filter: blur(160px);
+    z-index: 999;
+}
+
+.gradient-03 {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    left: -70%;
+    top: 20%;
+
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(200px);
+    transform: rotate(-114.2deg);
+    z-index: 999;
+}
+
+.gradient-04 {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    right: 60%;
+    top: -30%;
+
+    background: rgba(177, 143, 41, 0.75);
+    filter: blur(200px);
+    transform: rotate(-53.13deg);
+}
+
+.gradient-05 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    top: 0px;
+    right: 0;
+
+    background: #e65147;
+    filter: blur(170px);
+}
+
+.feedback-gradient {
+    position: absolute;
+    width: 200px;
+    height: 316px;
+    left: 0px;
+    top: 0px;
+
+    background: #8d39a3;
+    filter: blur(175px);
+}
+
+.footer-gradient {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    left: 37%;
+    bottom: 0;
+
+    background: #65c4fa;
+    filter: blur(150px);
+}

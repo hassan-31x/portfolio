@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+    color: white;
+    background: #7440A5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7440A5;
+	border-radius: 6px;
+}
+
+li {
+  position: relative;
+}
+
+li .underline-div {
+  content: '';
+  width: 0px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  margin: 0 auto;
+  padding-top: 2px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.07s;
+  border-radius: 9999px;
+} 
+
+li:hover > .underline-div {
+  background: #7440A5;
+  width: 100%;
+}
+
+.mouse {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #333;
+	border-radius: 60px;
+	position: relative;
+}
+
+.mouse:hover {
+  border-color: #7440A5;
+}
+.mouse::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+.mouse::before:hover {
+  background-color: #7440A5;
+}
+
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.bg-change {
+	/* bg-[url("src/assets/clients.jpg")] */
+	background: url("/src/assets/clients.jpg");
+}

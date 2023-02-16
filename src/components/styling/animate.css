@@ -1,0 +1,53 @@
+.text-animate {
+    display: inline-block;
+    /* opacity: 0; */
+    /* animation: bounceIn 1s 1s; */
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+}
+
+.text-animate-hover:hover {
+    animation: rubberBand 1s;
+    color: #AC67D6;
+}
+/* 
+@keyframes bounceIn {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+} */
+
+@keyframes rubberBand {
+    0%{
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(1.12) scaleY(0.75);
+    }
+    55%{
+        transform: scaleX(0.85) scaleY(1);
+    }
+    65%{
+        transform: scaleX(1.09) scaleY(0.85);
+    }
+    75%{
+        transform: scaleX(0.9)  scaleY(1);
+    }
+    90%{
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+  }
+
