@@ -6,47 +6,47 @@ const Skills = () => {
   const techs = [
     {
       name: 'Javascript',
-      img: 'javascript.png',
+      img: 'javascript',
       last: 'false'
     },
     {
       name: 'React JS',
-      img: 'react.png',
+      img: 'reacts',
       last: 'false'
     },
     {
       name: 'Next JS',
-      img: 'next.png',
+      img: 'next',
       last: 'false'
     },
     {
       name: 'Tailwind CSS',
-      img: 'tailwind.png',
+      img: 'tailwind',
       last: 'true'
     },
     {
       name: 'Typescript',
-      img: 'typescript.png',
+      img: 'typescript',
       last: 'true'
     },
     {
       name: 'Node JS',
-      img: 'node.png',
+      img: 'node',
       last: 'true'
     },
     {
       name: 'Express JS',
-      img: 'express.png',
+      img: 'express',
       last: 'false'
     },
     {
       name: 'MYSQL',
-      img: 'mysql.png',
+      img: 'mysql',
       last: 'false'
     },
     {
       name: 'Firebase',
-      img: 'firebase.png',
+      img: 'firebase',
       last: 'false'
     },
   ]

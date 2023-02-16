@@ -1,17 +1,20 @@
 import {useEffect} from 'react'
 import { motion } from 'framer-motion'
-import Logo from '../assets/logo.png'
+import Madarchod from '../assets/mc.webp'
 
 //Add index.js to import all images from single file
-import Express from '../assets/express.png'
-import Firebase from '../assets/firebase.png'
-import Javascript from '../assets/javascript.png'
-import Mysql from '../assets/mysql.png'
-import Next from '../assets/next.png'
-import Node from '../assets/node.png'
-import Reacts from '../assets/react.png'
-import Tailwind from '../assets/tailwind.png'
-import Typescript from '../assets/typescript.png'
+// import Express from '../assets/express.png'
+// import Firebase from '../assets/firebase.png'
+// import Javascript from '../assets/javascript.png'
+// import Mysql from '../assets/mysql.png'
+// // import Next from '/src/assets/next.png'
+// import Next from '../assets/next.png'
+// import Node from '../assets/node.png'
+// import Reacts from '../assets/react.png'
+// import Tailwind from '../assets/tailwind.png'
+// import Typescript from '../assets/typescript.png'
+
+import Suwar from '../assets/next2.jpg'
 
 const Skill = ({name, last, img}) => {
     // useEffect(() => {
@@ -20,19 +23,24 @@ const Skill = ({name, last, img}) => {
     //     start: 'top 40%'
     //   }})
     // }, [])
-
+  // const imgs = 'Typescript'
   return (
     <div className='group relative flex cursor-pointer z-[9999999]'>
-        <motion.img
+        <motion.div
         initial={{
            x: last == "true" ? -200 : 200,
            opacity: 0
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x:0 }}
-         src={`/src/assets/skills/${img}`}
+        // src={`/src/assets/${img}`}
+
+        // src={Madarchod}
+
+
+        // src={`../assets/${img}`}
         //  src={img && require('../assets/' + img)}
-         className='skill translate-x-0 rounded-full border border- object-cover w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] filter group-hover:grayscale transition duration-300 ease-in-out'
+         className={`skill translate-x-0 rounded-full border border- object-cover w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] filter group-hover:grayscale transition duration-300 ease-in-out ${img}`}
          />
 
         <div className={`absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-gray-200 hover:border-2 hover:border-purple w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] rounded-full z-0 img-true`}>

@@ -98,3 +98,55 @@ li:hover > .underline-div {
 	/* bg-[url("src/assets/clients.jpg")] */
 	background: url("/src/assets/clients.jpg");
 }
+
+
+.next {
+	background: url("/src/assets/next.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.reacts {
+	background: url("/src/assets/react.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.firebase {
+	background: url("/src/assets/firebase.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.typescript {
+	background: url("/src/assets/typescript.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.firebase {
+	background: url("/src/assets/firebase.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.node {
+	background: url("/src/assets/node.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.express {
+	background: url("/src/assets/express.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tailwind {
+	background: url("/src/assets/tailwind.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mysql {
+	background: url("/src/assets/mysql.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.javascript {
+	background: url("/src/assets/javascript.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
