@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import './styling/gradients.css'
 import About1 from "../assets/about1.webp";
 import About2 from "../assets/about2.webp";
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger) 
 
 const About = () => {
   let text = useRef(null)

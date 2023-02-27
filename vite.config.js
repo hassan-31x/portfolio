@@ -24,7 +24,8 @@ export default defineConfig({
       "src/**/*.jpeg",
       "src/**/*.png",
       "src/**/*.gif",
-      "src/**/*.svg"
+      "src/**/*.svg",
+      "public/**/*.pdf"
     ]
   }
 });

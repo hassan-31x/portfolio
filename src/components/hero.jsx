@@ -23,6 +23,21 @@ const Hero = () => {
     const nameArray = ['M','u','h','a','m','m','a','d',' ','H','a','s','s','a','n']
     const jobArray = ['R','e','a','c','t',' ','D','e','v','e','l','o','p','e','r','.']
 
+    const downloadPdf = () => {
+        // using Java Script method to get PDF file
+        fetch('resume-hassan.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'resume-hassan.pdf';
+                alink.click();
+            })
+        })
+    }
+
   return ( 
     <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto mt-16 mb-6 lg:my-28 flex flex-col md:flex-row font-Poppins">
         <div className='h-screen bg-blue-500 absolute'></div>
@@ -33,7 +48,7 @@ const Hero = () => {
 
             <div className="buttons flex gap-2 font-Code">
                 <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 bg-gray-800 text-white rounded-sm flex duration-150 delay-75 gap-3 items-center hover:text-[#61249a] font-semibold hover:bg-[#bb94d2] opacity-0'><BiCodeAlt />My Projects</button>
-                <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 text-white flex gap-3 items-center duration-150 delay-75 border border-transparent hover:text-[#bb94d2] opacity-0'><BsArrowDown />Download Resume</button>
+                <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 text-white flex gap-3 items-center duration-150 delay-75 border border-transparent hover:text-[#bb94d2] opacity-0' onClick={downloadPdf}><BsArrowDown />Download Resume</button>
             </div>
         </div>
         <div className='flex-1 flex items-center pb-2 mx-auto md:mx-0'>
