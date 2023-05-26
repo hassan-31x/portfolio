@@ -33,7 +33,7 @@ const Hero = () => {
                 let alink = document.createElement('a');
                 alink.href = fileURL;
                 alink.download = 'resume-hassan.pdf';
-                alink.click();
+                alink.click(); 
             })
         })
     }
