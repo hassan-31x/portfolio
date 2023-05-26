@@ -20,7 +20,7 @@ useEffect(() => {
 
 
   return (
-    <div className="max-h-[50vh] h-[200px] w-[80%] lg:w-[75%] max-w-[90rem] mx-auto pb-96">
+    <div className="max-h-[50vh] h-[200px] w-[80%] lg:w-[75%] max-w-[90rem] mx-auto pb-96" id="projects">
       <div class="line h-[50px] lg:h-[70px] relative overflow-hidden mt-10 lg:mt-24">
         <span className="text-gray-100 text-4xl md:text-6xl lg:text-7xl font-Code tracking-tightest uppercase opacity-80 absolute">Projects</span>
       </div>

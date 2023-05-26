@@ -39,7 +39,7 @@ const Hero = () => {
     }
 
   return ( 
-    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto mt-16 mb-6 lg:my-28 flex flex-col md:flex-row font-Poppins">
+    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto mt-16 mb-6 lg:my-28 flex flex-col md:flex-row font-Poppins" id='home'>
         <div className='h-screen bg-blue-500 absolute'></div>
         <div className="flex gap-1 lg:gap-3 flex-col flex-[4]">
             <p className="lg:text-xl font-semibold opacity-90 text-lightPurple"><AnimatedLetter letterClass={letterClass} stringArray={hiArray} index={0} /></p>

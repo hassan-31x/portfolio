@@ -26,6 +26,31 @@ const Navbar = (props) => {
       url: "www.snapchat.com",
     },
   ];
+
+  const navItems = [
+    {
+      name: 'Home',
+      id: 'home'
+    },
+    {
+      name: 'Projects',
+      id: 'projects'
+    },
+    {
+      name: 'Skills',
+      id: 'skills'
+    },
+    {
+      name: 'Contact',
+      id: 'contact'
+    },
+  ]
+
+  const scroll = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <header className="sticky bg-darkColor top-0 p-3 mx-auto z-[1000] w-screen xl:items-center font-Code" >
       <div className="w-full bg-yellow-400 text-black h-10 justify-center text-center flex items-center text-xs lg:text-sm font-Poppins lg:font-semibold">This website is under development. Projects section will be updated within few days</div>
@@ -44,7 +69,7 @@ const Navbar = (props) => {
           transition={{
             duration: 1.5,
           }}
-          className="text-white text-3xl uppercase"
+          className="text-white text-3xl uppercase cursor-pointer"
         >
           <img src={Logo} alt="" className="h-20" />
         </motion.div>
@@ -65,11 +90,11 @@ const Navbar = (props) => {
           className="flex items-center text-grey-300 cursor-pointer"
         >
         <ul className="hidden lg:flex gap-8">
-            <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)}><span className="text-purple pr-2">01. </span>Home<div className="underline-div" /></li>
-            <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)}><span className="text-purple pr-2">02. </span>Projects<div className="underline-div" /></li>
-            <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)}><span className="text-purple pr-2">03. </span>Skills<div className="underline-div" /></li>
-            <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)}><span className="text-purple pr-2">04. </span>Contact<div className="underline-div" /></li>
+            {navItems.map((item, idx) => (
+              <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)} onClick={() => scroll(item.id)}><span className="text-purple pr-2">0{idx+1}. </span>{item.name}<div className="underline-div" /></li>
+            ))}
         </ul>
+
         <RxHamburgerMenu className="text-white text-3xl block lg:hidden mr-5" onClick={() => setShowNav(!showNav)} />
         </motion.div>
       </div>

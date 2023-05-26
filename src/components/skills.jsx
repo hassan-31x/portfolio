@@ -52,7 +52,7 @@ const Skills = () => {
   ]
 
   return (
-    <div className="h-screen relative flex flex-col mb-96 text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
+    <div className="h-screen relative flex flex-col mb-96 text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center" id="skills">
       <h3 className="absolute font-Code top-36 uppercase tracking-[3px] text-white text-3xl">
         Skills
       </h3>

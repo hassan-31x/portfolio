@@ -6,7 +6,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto flex flex-col-reverse md:flex-row-reverse text-white font-Poppins gap-20">
+    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto flex flex-col-reverse md:flex-row-reverse text-white font-Poppins gap-20" id="contact">
       <div className="flex-[5]">
         <div className="flex gap-3 mb-[3.5rem]">
           <div className="input-field">
