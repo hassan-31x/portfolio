@@ -1,1 +1,7 @@
 make a separate page for showing all projects
+
+add video for projects section that is played on hover instead of static imgs
+
+add twiitter link
+
+change cursor to custom cursor while scrolling on skills

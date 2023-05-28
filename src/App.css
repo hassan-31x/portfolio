@@ -100,53 +100,58 @@ li:hover > .underline-div {
 }
 
 
+.skill {
+	cursor: url('/src/assets/logo.png'), auto;
+}
+
+
 .next {
-	background: url("/src/assets/next.png");
+	background: url("/src/assets/next.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.reacts {
-	background: url("/src/assets/react.png");
+.react {
+	background: url("/src/assets/react.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .firebase {
-	background: url("/src/assets/firebase.png");
+	background: url("/src/assets/firebase.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .typescript {
-	background: url("/src/assets/typescript.png");
+	background: url("/src/assets/typescript.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.firebase {
-	background: url("/src/assets/firebase.png");
+.python {
+	background: url("/src/assets/python.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.node {
-	background: url("/src/assets/node.png");
+.django {
+	background: url("/src/assets/django.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .express {
-	background: url("/src/assets/express.png");
+	background: url("/src/assets/express.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .tailwind {
-	background: url("/src/assets/tailwind.png");
+	background: url("/src/assets/tailwind.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .mysql {
-	background: url("/src/assets/mysql.png");
+	background: url("/src/assets/mysql.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .javascript {
-	background: url("/src/assets/javascript.png");
+	background: url("/src/assets/javascript.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }

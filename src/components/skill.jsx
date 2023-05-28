@@ -1,6 +1,6 @@
 import {useEffect} from 'react'
 import { motion } from 'framer-motion'
-import Madarchod from '../assets/mc.webp'
+import Cursor from '../assets/logo.png'
 
 //Add index.js to import all images from single file
 // import Express from '../assets/express.png'
@@ -14,7 +14,6 @@ import Madarchod from '../assets/mc.webp'
 // import Tailwind from '../assets/tailwind.png'
 // import Typescript from '../assets/typescript.png'
 
-import Suwar from '../assets/next2.jpg'
 
 const Skill = ({name, last, img}) => {
     // useEffect(() => {
@@ -23,9 +22,9 @@ const Skill = ({name, last, img}) => {
     //     start: 'top 40%'
     //   }})
     // }, [])
-  // const imgs = 'Typescript'
+  // const imgs = 'Typescript' 
   return (
-    <div className='group relative flex cursor-pointer z-[9999999]'>
+    <div className='group relative flex z-[9999999]'>
         <motion.div
         initial={{
            x: last == "true" ? -200 : 200,
@@ -40,7 +39,7 @@ const Skill = ({name, last, img}) => {
 
         // src={`../assets/${img}`}
         //  src={img && require('../assets/' + img)}
-         className={`skill translate-x-0 rounded-full border border- object-cover w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] filter group-hover:grayscale transition duration-300 ease-in-out ${img}`}
+         className={`skill translate-x-0 rounded-full border border- object-cover w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] filter group-hover:grayscale transition duration-300 ease-in-out ${img}`} style={{cursor: `url(${Cursor})`}}
          />
 
         <div className={`absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-gray-200 hover:border-2 hover:border-purple w-[4.5rem] h-[4.5rem] md:w-[6.5rem] md:h-[6.5rem] xl:w-[8rem] xl:h-[8rem] rounded-full z-0 img-true`}>

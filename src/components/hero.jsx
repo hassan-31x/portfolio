@@ -47,12 +47,12 @@ const Hero = () => {
             <h2 className="text-[2.1rem] md:text-[4rem] xl:text-[5.8rem] text-gray-400 font-bold"><AnimatedLetter letterClass={letterClass} stringArray={jobArray} index={32} /></h2>
 
             <div className="buttons flex gap-2 font-Code">
-                <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 bg-gray-800 text-white rounded-sm flex duration-150 delay-75 gap-3 items-center hover:text-[#61249a] font-semibold hover:bg-[#bb94d2] opacity-0'><BiCodeAlt />My Projects</button>
+                <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 bg-gray-800 text-white rounded-sm flex duration-150 delay-75 gap-3 items-center hover:text-[#61249a] font-semibold hover:bg-[#bb94d2] opacity-0' onClick={() => {document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}}><BiCodeAlt />My Projects</button>
                 <button className='button2 mt-3 mb-6 md:my-0 py-2 px-3 text-xs md:text-lg md:py-3 md:px-5 text-white flex gap-3 items-center duration-150 delay-75 border border-transparent hover:text-[#bb94d2] opacity-0' onClick={downloadPdf}><BsArrowDown />Download Resume</button>
             </div>
         </div>
         <div className='flex-1 flex items-center pb-2 mx-auto md:mx-0'>
-            <div className="mouse ml-auto" />
+            <div className="mouse ml-auto cursor-grab" onClick={() => {document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}} />
         </div>
     </div>
   )

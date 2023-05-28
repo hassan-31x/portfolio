@@ -26,7 +26,7 @@ const AnimatedLetter = ({ letterClass, stringArray, index}) => {
             initial={{ scale: 0, translateY: 20 }}
             animate={{ scale: [0, 0.7, 1, 1.3, 1], translateY: 0 }}
             transition={{ type: "spring", duration: 1, delay: (i+index)/25 }}
-            key={char+i} className={`${letterClass} _${i + index}`}>
+            key={char+i} className={`${letterClass} _${i + index} cursor-pointer`}>
                 {char} 
             </motion.span>
         ))

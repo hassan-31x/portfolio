@@ -7,21 +7,6 @@ const Skills = () => {
     {
       name: 'Javascript',
       img: 'javascript',
-      last: 'false'
-    },
-    {
-      name: 'React JS',
-      img: 'reacts',
-      last: 'false'
-    },
-    {
-      name: 'Next JS',
-      img: 'next',
-      last: 'false'
-    },
-    {
-      name: 'Tailwind CSS',
-      img: 'tailwind',
       last: 'true'
     },
     {
@@ -30,9 +15,14 @@ const Skills = () => {
       last: 'true'
     },
     {
-      name: 'Node JS',
-      img: 'node',
+      name: 'React JS',
+      img: 'react',
       last: 'true'
+    },
+    {
+      name: 'Next JS',
+      img: 'next',
+      last: 'false'
     },
     {
       name: 'Express JS',
@@ -40,14 +30,24 @@ const Skills = () => {
       last: 'false'
     },
     {
-      name: 'MYSQL',
-      img: 'mysql',
+      name: 'Tailwind CSS',
+      img: 'tailwind',
       last: 'false'
     },
     {
-      name: 'Firebase',
-      img: 'firebase',
-      last: 'false'
+      name: 'Python',
+      img: 'python',
+      last: 'true'
+    },
+    {
+      name: 'Django',
+      img: 'django',
+      last: 'true'
+    },
+    {
+      name: 'MySQL',
+      img: 'mysql',
+      last: 'true'
     },
   ]
 

@@ -4,6 +4,7 @@ import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icon
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 
 const SocialIcons = () => {
+  const newLocal = "https://github.com/hassan-31x";
   return (
     <div className="hidden md:flex flex-col items-center fixed bottom-0 left-2 lg:left-10 z-10">
       <motion.div
@@ -14,7 +15,7 @@ const SocialIcons = () => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://github.com/codebucks27"}
+          href={'https://www.facebook.com/hassan31x/'}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
             <FaFacebookF />
@@ -29,7 +30,7 @@ const SocialIcons = () => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://twitter.com/code_bucks"}
+          href={"https://github.com/hassan-31x"}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
             <AiOutlineGithub />
@@ -44,7 +45,7 @@ const SocialIcons = () => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://facebook.com/codebucks27"}
+          href={"https://www.linkedin.com/in/mhassan31x/"}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
             <FaLinkedin />
@@ -59,7 +60,7 @@ const SocialIcons = () => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://youtube.com"}
+          href={"https://www.twitter.com"}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
             <AiOutlineTwitter />
