@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/Ai'
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineWhatsApp } from 'react-icons/Ai'
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 
 const SocialIcons = () => {
@@ -52,10 +52,10 @@ const SocialIcons = () => {
           </IconContext.Provider>
         </a>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.6 }} className='mb-4'
+        transition={{ type: "spring", duration: 1, delay: 1.6 }}
       >
         <a
           style={{ color: "inherit" }}
@@ -64,6 +64,21 @@ const SocialIcons = () => {
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
             <AiOutlineTwitter />
+          </IconContext.Provider>
+        </a>
+      </motion.div> */}
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.6 }} className='mb-4'
+      >
+        <a
+          style={{ color: "inherit" }}
+          target="_blank"
+          href={"https://api.whatsapp.com/send?phone=923132508277"}
+        >
+          <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
+            <AiOutlineWhatsApp />
           </IconContext.Provider>
         </a>
       </motion.div>
