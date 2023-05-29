@@ -53,7 +53,7 @@ const Navbar = (props) => {
 
   return (
     <header className="sticky bg-darkColor top-0 p-3 mx-auto z-[1000] w-screen xl:items-center font-Code" >
-      <div className="w-full bg-yellow-400 text-black h-10 justify-center text-center flex items-center text-xs lg:text-sm font-Poppins lg:font-semibold">This website is under development. Projects section will be updated within few days</div>
+      <div className="w-full bg-yellow-400 text-black h-10 justify-center text-center flex items-center text-xs lg:text-sm font-Poppins lg:font-semibold">This website is under development. Projects section will be updated. You can view the projects&#160;<a href="https://github.com/hassan-31x" className="underline text-purple"> here </a>&#160;till then</div>
       <div className="flex max-w-7xl mx-auto justify-between items-center">
         <motion.div
           initial={{
