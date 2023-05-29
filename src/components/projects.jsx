@@ -1,4 +1,5 @@
 import Video from "./video.jsx";
+import TempProjects from "./tempProjects.jsx";
 
 const Projects = () => {
   const projects = [
@@ -35,10 +36,10 @@ const Projects = () => {
       videoName: "Project1",
     },
   ];
-
+  
   return (
     <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto">
-      {projects.map((project) => (
+       {/* {projects.map((project) => (
         <div className="mb-10">
           <Video
             title={project.title}
@@ -48,6 +49,17 @@ const Projects = () => {
             videoName={project.videoName}
             keyss={project.idx}
           />
+        </div>
+      ))} */}
+      {projects.map((project) => (
+        <div className="mb-10">
+          <TempProjects
+          title={project.title}
+          desc={project.desc}
+          tech={project.tech}
+          imgName={project.imgName}
+          videoName={project.videoName}
+          keyss={project.idx} />
         </div>
       ))}
     </div>

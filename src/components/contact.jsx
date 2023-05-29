@@ -1,15 +1,18 @@
-import React from "react";
+import {useState} from "react";
 import "./styling/contact.css";
 import { IconContext } from "react-icons";
 import { MdSend, MdLocationOn, MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
+  const [hover, setHover] = useState(false)
+
+
   return (
     <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto  text-white font-Poppins pb-16">
       <div className="w-full flex flex-col items-center mb-24 cursor-pointer">
-        <div className="text-white text-2xl lg:text-4xl xl:text-6xl font-semibold hover:underline">Contact Me🚀</div>
-        <div className="w-[11rem] lg:w-[16rem] xl:w-[27rem] h-[0.1rem] lg:h-1 rounded-lg tansition-all bg-white delay-200 duration-300 hidden hover:block"></div>
+        <h2 className="text-white text-2xl lg:text-4xl xl:text-6xl font-semibold" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>Contact Me🚀</h2>
+        <div className={` h-[0.1rem] lg:h-1 rounded-lg bg-white duration-200 delay-150 origin-left ease-out ${hover ? 'w-[11rem] lg:w-[16rem] xl:w-[27rem]': 'w-0'}`}></div>
       </div>
       <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto flex flex-col-reverse md:flex-row-reverse gap-20" id="contact">
         <div className="flex-[5] items-end flex flex-col">

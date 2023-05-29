@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
 import HoverVideoPlayer from "react-hover-video-player";
+import Img from '../assets/overlay-img.png'
 import {gsap, Power2} from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
  
-const Video = ({title, desc, tech, imgName, videoName, keyss}) => {
+const tempProjects = ({title, desc, tech, imgName, videoName, keyss}) => {
   let container = useRef(null)
   let img = useRef(null)
 
@@ -22,23 +23,11 @@ const Video = ({title, desc, tech, imgName, videoName, keyss}) => {
 
   return (
     <div className={`opacity-100 translate-x-0 relative flex flex-col overflow-hidden ${keyss === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`} ref={el => container=el}>
-        <HoverVideoPlayer
-          restartOnPaused
-          pausedOverlay={
-            <div
-              // src={`/src/assets/${imgName}.png`}
-              className='grayscale-[60%] overlay-img'
+            <img
+            src={Img}
+              className='mx-auto lg:mx-0 w-[55rem] max-w-[60vw] h-auto mb-10 lg:mb-0'
               ref={el => img=el}
-              // alt=""
-              style={{
-                width: "150%",
-                height: "150%",
-                objectFit: "cover",
-              }}
             />
-          }
-          videoSrc={`/src/assets/${videoName}.mp4`} className='mx-auto lg:mx-0 w-[55rem] max-w-[60vw] h-auto mb-10 lg:mb-0 video-css'
-        />
         
         <div className={`text-white ${keyss === 1 ? 'right-0' : 'left-0'} absolute z-[100]`}>
           <div className={`w-max ${keyss === 1 ? 'lg:ml-auto' : 'lg:mr-auto'}`}>
@@ -57,4 +46,4 @@ const Video = ({title, desc, tech, imgName, videoName, keyss}) => {
   )
 }
 
-export default Video
+export default tempProjects

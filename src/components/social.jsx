@@ -1,16 +1,20 @@
+import { useState } from 'react'
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineWhatsApp } from 'react-icons/Ai'
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 
 const SocialIcons = () => {
+  const [hover, setHover] = useState(false)
+
   const newLocal = "https://github.com/hassan-31x";
   return (
-    <div className="hidden md:flex flex-col items-center fixed bottom-0 left-2 lg:left-10 z-10">
+    <div className={`hidden md:flex flex-col items-center fixed bottom-0 lg:left-10 z-10 ${hover ? '-left-20' : 'left-2'}`}>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1 }}
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
       >
         <a
           style={{ color: "inherit" }}
@@ -26,6 +30,7 @@ const SocialIcons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.2 }}
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
       >
         <a
           style={{ color: "inherit" }}
@@ -41,6 +46,7 @@ const SocialIcons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.4 }}
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
       >
         <a
           style={{ color: "inherit" }}
@@ -56,6 +62,7 @@ const SocialIcons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
       >
         <a
           style={{ color: "inherit" }}
@@ -71,6 +78,7 @@ const SocialIcons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }} className='mb-4'
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
       >
         <a
           style={{ color: "inherit" }}

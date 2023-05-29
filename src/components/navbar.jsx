@@ -90,8 +90,8 @@ const Navbar = (props) => {
           className="flex items-center text-grey-300 cursor-pointer"
         >
         <ul className="hidden lg:flex gap-8">
-            {navItems.map((item, idx) => (
-              <li className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)} onClick={() => scroll(item.id)}><span className="text-purple pr-2">0{idx+1}. </span>{item.name}<div className="underline-div" /></li>
+            {navItems.map((item, index) => (
+              <li key={item.id} className="text-white" onMouseEnter={() => props.changeHover(true)} onMouseLeave={() => props.changeHover(false)} onClick={() => scroll(item.id)}><span className="text-purple pr-2">0{index+1}. </span>{item.name}<div className="underline-div" /></li>
             ))}
         </ul>
 
