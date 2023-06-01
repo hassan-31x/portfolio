@@ -38,7 +38,7 @@ const Projects = () => {
   ];
   
   return (
-    <div className="w-[90vw] lg:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto">
+    <div className="w-[90vw] lg:w-[85vw] xl:w-[75vw] lg:min-h-[50vh] max-w-7xl mx-auto">
        {/* {projects.map((project) => (
         <div className="mb-10">
           <Video
@@ -47,7 +47,7 @@ const Projects = () => {
             tech={project.tech}
             imgName={project.imgName}
             videoName={project.videoName}
-            keyss={project.idx}
+            keys={project.idx}
           />
         </div>
       ))} */}
@@ -59,7 +59,7 @@ const Projects = () => {
           tech={project.tech}
           imgName={project.imgName}
           videoName={project.videoName}
-          keyss={project.idx} />
+          keys={project.idx} />
         </div>
       ))}
     </div>
