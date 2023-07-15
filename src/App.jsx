@@ -73,19 +73,22 @@ function App() {
   const variants = {
     default: {
       x: mousePosition.x,
-      y: mousePosition.y
+      y: mousePosition.y,
     },
     text: {
       x: mousePosition.x - 17,
       y: mousePosition.y - 14,
       height: 70,
-      width: 70
+      width: 70,
     },
     large: {
       x: mousePosition.x - 44,
       y: mousePosition.y - 45,
       height: 130,
-      width: 130
+      width: 130,
+      // backgroundColor: '#fff',
+      mixBlendMode: 'difference',
+      color: 'black'
     }
   }
 
@@ -119,7 +122,7 @@ function App() {
         <motion.div
         variants = {variants}
         animate = {cursorVariant}
-        className={`hidden lg:block border border-purple h-5 w-5 rounded-full fixed top-0 left-0 pointer-events-none z-[999999] ${cursorVariant === 'text' || cursorVariant === 'large' ? 'bg-purple opacity-50' : 'bg-transparent'} text-center leading-[130px] font-Poppins font-normal text-white`} >{cursorVariant === 'large' && 'Contact'}</motion.div>
+        className={`hidden lg:block border border-purple h-5 w-5 rounded-full fixed top-0 left-0 pointer-events-none z-[999999] text-center leading-[130px] font-Poppins ${cursorVariant==='text' ? 'bg-purple opacity-40' : cursorVariant==='default' ? 'bg-transparent' : 'bg-white'} font-normal text-white`} >{cursorVariant === 'large' && 'Contact'}</motion.div>
         
       </div>
     </div>
