@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineWhatsApp } from 'react-icons/Ai'
+import { AiOutlineGithub, AiOutlineWhatsApp } from 'react-icons/Ai'
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 
 const SocialIcons = () => {

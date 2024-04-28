@@ -26,6 +26,9 @@ export default defineConfig({
       "src/**/*.gif",
       "src/**/*.svg",
       "public/**/*.pdf"
-    ]
+    ],
+    rollupOptions: {
+      external: ['react-icons']
+    }
   }
 });
