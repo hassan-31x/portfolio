@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
-import { AiOutlineGithub, AiOutlineWhatsApp } from 'react-icons/Ai'
-import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
+import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const SocialIcons = () => {
   const [hover, setHover] = useState(false)
@@ -38,7 +37,7 @@ const SocialIcons = () => {
           href={"https://github.com/hassan-31x"}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
-            <AiOutlineGithub />
+            <FaGithub />
           </IconContext.Provider>
         </a>
       </motion.div>
@@ -86,7 +85,7 @@ const SocialIcons = () => {
           href={"https://api.whatsapp.com/send?phone=923132508277"}
         >
           <IconContext.Provider value={{ className: 'text-purple lg:text-[2rem] text-[1rem] hover:text-[2rem] lg:hover:text-[3rem] origin-centre transition-all duration-[0.35s] ease-out my-2 hover:my-0'}}>
-            <AiOutlineWhatsApp />
+            <FaWhatsapp />
           </IconContext.Provider>
         </a>
       </motion.div>
