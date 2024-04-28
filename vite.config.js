@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/portfolio/',
   server: {
     port: 8000,
   },
@@ -27,8 +26,5 @@ export default defineConfig({
       "src/**/*.svg",
       "public/**/*.pdf"
     ],
-    rollupOptions: {
-      external: ['react-icons']
-    }
   }
 });
